@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Campus Opportunity Agent — Autonomous College Career Discovery</title>
+    <meta name="description" content="Next-generation autonomous AI agent that discovers, parses, and ranks internships, scholarships, hackathons, and research grants for university students.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+
+    <!-- Dynamic AI Neural Network Background Canvas -->
+    <canvas id="ai-neural-canvas"></canvas>
+
+    <!-- Ambient Glowing Gradient Spheres -->
+    <div class="ambient-glow ambient-glow-1"></div>
+    <div class="ambient-glow ambient-glow-2"></div>
+    <div class="ambient-glow ambient-glow-3"></div>
+
+    <!-- ==========================================================================
+         TOP NAVIGATION BAR
+         ========================================================================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-wrapper">
+            <a href="#hero" class="brand-logo">
+                <div class="logo-icon-wrap">⚡</div>
+                <div>
+                    <span class="brand-name">CampusScout AI</span>
+                    <span class="brand-tag">AI v2.0</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                
+                
+                
+                
+                
+                <li><a href="#search-section" class="nav-link">Live Discovery</a></li>
+                
+                
+            </ul>
+
+            <div class="nav-actions">
+                <div class="agent-status-pill" title="Autonomous Crawler Swarm is active">
+                    <span class="status-dot"></span>
+                    
+                </div>
+
+                <button class="btn btn-glass btn-sm" id="btn-open-bookmarks" title="View Saved Opportunities">
+                    <span>★ Saved</span>
+                    <span id="nav-bookmark-count" class="badge" style="margin-bottom:0; padding:2px 6px; font-size:0.75rem;">0</span>
+                </button>
+
+                <button class="btn btn-primary btn-sm" id="btn-open-chat">
+                    <span>✨ Ask AI Copilot</span>
+                </button>
+
+                <!-- Authentication Nav Buttons (Logged Out State) -->
+                <div class="auth-nav-guest" id="auth-nav-guest">
+                    <button class="btn btn-glass btn-sm" id="btn-nav-login">Log In</button>
+                    <button class="btn btn-glow btn-sm" id="btn-nav-signup">Sign Up</button>
+                </div>
+
+                <!-- User Profile Avatar & Dropdown Menu (Logged In State) -->
+                <div class="auth-nav-user" id="auth-nav-user" style="display: none;">
+                    <button class="user-avatar-btn" id="user-avatar-btn" title="Account Menu">
+                        <span class="avatar-initials" id="user-avatar-initials">AR</span>
+                        <span class="user-status-dot"></span>
+                    </button>
+                    
+                    <div class="user-dropdown-menu" id="user-dropdown-menu">
+                        <div class="dropdown-user-header">
+                            <strong id="dropdown-user-name">Alex Rivera</strong>
+                            <span id="dropdown-user-email">alex.rivera@university.edu</span>
+                            <span class="dropdown-user-badge">Verified Student</span>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <button class="dropdown-item" id="dropdown-item-profile">
+                            <span>👤</span> View Profile
+                        </button>
+                        <button class="dropdown-item" id="dropdown-item-bookmarks">
+                            <span>★</span> Saved Opportunities
+                        </button>
+                        <div class="dropdown-divider"></div>
+                        <button class="dropdown-item text-danger" id="dropdown-item-logout">
+                            <span>🚪</span> Log Out
+                        </button>
+                    </div>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle navigation">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========================================================================
+         1. HERO SECTION
+         ========================================================================== -->
+    section class="hero-section" id="hero">
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <span>⚡ Next-Gen Autonomous Campus Discovery Engine</span>
+            </div>
+
+            <h1 class="hero-title">
+                Never Miss a <span class="text-gradient">Life-Changing</span> Opportunity Again.
+            </h1>
+
+          
+
+            <div class="hero-cta-group">
+                <a href="#search-section" class="btn btn-primary btn-lg">
+                    <span>🚀 Launch Live Discovery</span>
+                </a>
+                <button class="btn btn-glass btn-lg" id="hero-try-ai-btn">
+                    <span>✨ Chat with Campus Agent</span>
+                </button>
+                <button class="btn btn-glow btn-lg" id="btn-edit-profile">
+                    <span>⚙️ Calibrate My Profile</span>
+                </button>
+            </div>
+
+            <!-- Live KPI Metrics Strip -->
+            <div class="hero-stats-strip">
+                <div class="stat-box">
+                    <div class="stat-number" id="stat-crawled">12,480+</div>
+                    <div class="stat-label">Opportunities Crawled</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">98.4%</div>
+                    <div class="stat-label">AI Match Accuracy</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">45+</div>
+                    <div class="stat-label">Campus Portals Indexed</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Missed Deadlines</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. PROBLEM STATEMENT SECTION
+         ========================================================================== -->
+    
+
+    <!-- ==========================================================================
+         3. AI SOLUTION SECTION
+         ========================================================================== -->
+    
+
+    <!-- ==========================================================================
+         4. SYSTEM ARCHITECTURE DIAGRAM SECTION
+         ========================================================================== -->
+    
+
+    <!-- ==========================================================================
+         5. TECHNOLOGIES SHOWCASE SECTION
+         ========================================================================== -->
+    
+
+    <!-- ==========================================================================
+         6. WORKING PROCESS (4 ANIMATED STEPS) SECTION
+         ========================================================================== -->
+   
+    <!-- ==========================================================================
+         7 & 8. LIVE OPPORTUNITY SEARCH & AI RECOMMENDATION CARDS
+         ========================================================================== -->
+    <section class="search-filter-section" id="search-section">
+        <!-- Protected Dashboard Security Gate (Visible when unauthenticated) -->
+        <div class="dashboard-auth-gate" id="dashboard-auth-gate">
+            <div class="dashboard-lock-card">
+                <div class="lock-icon-glow">🔒</div>
+                <h3 class="lock-title">University Student Authentication Required</h3>
+                <p class="lock-desc">
+                    Log in to unlock the live opportunity dashboard, calculate personalized AI Match Scores for your branch & year, save bookmarks, and submit 1-click applications.
+                </p>
+                <div class="lock-actions">
+                    <button class="btn btn-primary btn-lg" id="btn-gate-login">
+                        <span>🔐 Log In to Unlock Feed</span>
+                    </button>
+                    <button class="btn btn-glow btn-lg" id="btn-gate-signup">
+                        <span>🎓 Create Free Student Account</span>
+                    </button>
+                </div>
+                <div class="lock-perks">
+                    <span>✓ Real-time Branch AI Matching</span>
+                    <span>✓ Urgent Deadline Sentinel</span>
+                    <span>✓ 1-Click AI Summarizer</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Live Explorer</div>
+                <h2 class="section-title">Discover Verified Opportunities in Real-Time</h2>
+                <p class="section-desc">
+                    Filter across 6 categories, toggle engineering branches, and observe AI Match Scores dynamically adjust to your student profile.
+                </p>
+            </div>
+
+            <!-- Student Profile Simulator Strip -->
+            <div class="profile-simulator-bar">
+                <div class="sim-profile-info">
+                    <div class="sim-avatar" id="sim-avatar-icon">🎓</div>
+                    <div class="sim-details">
+                        <strong id="sim-display-name">Alex Rivera</strong>
+                        <div class="sim-meta">
+                            <span id="sim-display-branch">Computer Science / IT</span> • 
+                            <span id="sim-display-year">3rd Year</span> • 
+                            <span id="sim-display-cgpa">CGPA 8.7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sim-actions">
+                    <span style="font-size:0.8rem; color:var(--text-muted);">Simulate Profile:</span>
+                    <button class="btn btn-glass btn-sm sim-preset-btn" data-branch="Computer Science / IT" data-year="3rd Year">
+                        3rd Year CSE
+                    </button>
+                    <button class="btn btn-glass btn-sm sim-preset-btn" data-branch="Electronics & Comm (ECE)" data-year="2nd Year">
+                        2nd Year ECE
+                    </button>
+                    <button class="btn btn-glass btn-sm sim-preset-btn" data-branch="Design / UX" data-year="1st Year">
+                        1st Year Design
+                    </button>
+                    <button class="btn btn-glow btn-sm" id="btn-custom-profile-modal">
+                        ✏️ Custom
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Filter Dashboard -->
+            <div class="filter-dashboard">
+                <!-- Search Input -->
+                <div class="search-input-wrap">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="main-search-input" class="search-input" placeholder="Search by opportunity, company (e.g., Google, Microsoft, NASA), or skill (Python, AI, React)..." autocomplete="off">
+                    <button id="search-clear-btn" class="search-clear-btn">✕</button>
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="category-tabs" id="category-tabs">
+                    <button class="cat-pill active" data-category="All">🌟 All Categories</button>
+                    <button class="cat-pill" data-category="Internship">💼 Internships</button>
+                    <button class="cat-pill" data-category="Scholarship">🎓 Scholarships</button>
+                    <button class="cat-pill" data-category="Hackathon">💻 Hackathons</button>
+                    <button class="cat-pill" data-category="Workshop">🛠️ Workshops</button>
+                    <button class="cat-pill" data-category="Competition">🏆 Competitions</button>
+                    <button class="cat-pill" data-category="Campus Event">🎪 Campus Events</button>
+                </div>
+
+                <!-- Secondary Filter Dropdowns -->
+                <div class="filter-dropdowns-row">
+                    <div class="filter-select-wrap">
+                        <label class="filter-label">Branch / Major</label>
+                        <select id="filter-branch" class="custom-select">
+                            <option value="All">All Engineering & Streams</option>
+                            <option value="Computer Science / IT">Computer Science / IT</option>
+                            <option value="Electronics & Comm (ECE)">Electronics & Comm (ECE)</option>
+                            <option value="Electrical (EE)">Electrical (EE)</option>
+                            <option value="Mechanical">Mechanical Engineering</option>
+                            <option value="Biotechnology">Biotechnology</option>
+                            <option value="MBA & Business">MBA & Business</option>
+                            <option value="Design / UX">Design / UI-UX</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-select-wrap">
+                        <label class="filter-label">Academic Year</label>
+                        <select id="filter-year" class="custom-select">
+                            <option value="All">All Academic Years</option>
+                            <option value="1st Year">1st Year (Freshman)</option>
+                            <option value="2nd Year">2nd Year (Sophomore)</option>
+                            <option value="3rd Year">3rd Year (Pre-final)</option>
+                            <option value="4th Year">4th Year (Final)</option>
+                            <option value="Masters / PhD">Masters / PhD</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-select-wrap">
+                        <label class="filter-label">Deadline Urgency</label>
+                        <select id="filter-urgency" class="custom-select">
+                            <option value="All">All Deadlines</option>
+                            <option value="urgent">🔥 Closing in &lt; 7 Days (Urgent)</option>
+                            <option value="month">Closing within 30 Days</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-select-wrap">
+                        <label class="filter-label">Sort Results By</label>
+                        <select id="filter-sort" class="custom-select">
+                            <option value="match">⚡ Highest AI Match Score</option>
+                            <option value="deadline">⏳ Nearest Deadline First</option>
+                            <option value="prize">💰 Highest Stipend / Award</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Status Strip -->
+            <div class="filter-results-status">
+                <div class="results-count" id="results-count-text">
+                    Showing <strong>15</strong> verified opportunities
+                </div>
+
+                <div class="bookmark-filter-toggle" id="toggle-bookmarks-filter">
+                    <span id="star-filter-icon">☆</span>
+                    <span>Show Bookmarked Only (<span id="bookmark-filter-count">0</span>)</span>
+                </div>
+            </div>
+
+            <!-- Opportunity Cards Grid -->
+            <div class="opportunities-grid" id="opportunities-grid">
+                <!-- Cards dynamically populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. FUTURE SCOPE & EXPANSION ROADMAP
+         ========================================================================== -->
+    
+
+    <!-- ==========================================================================
+         10. PROFESSIONAL FOOTER & TEAM MEMBERS
+         ========================================================================== -->
+    <footer class="footer-section" id="team">
+        <div class="container">
+            <div class="team-header">
+                <div class="section-badge">Core Creators</div>
+                <h2 class="section-title">Engineered by the AI Campus Team</h2>
+                <p class="section-desc">Passionate students and engineers building autonomous tools to democratize student career access.</p>
+            </div>
+
+            <!-- Team Members Grid -->
+
+
+            <!-- Bottom Navigation & Info -->
+            <div class="footer-bottom-grid">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <div class="logo-icon-wrap">⚡</div>
+                        <div>
+                            <span class="brand-name">CampusScout AI</span>
+                            <span class="brand-tag">AI v2.0</span>
+                        </div>
+                    </div>
+                    <p>
+                        Empowering college students worldwide with autonomous AI opportunity discovery, semantic eligibility matching, and deadline vigilance.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h5>PLATFORM</h5>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Overview</a></li>
+                        <li><a href="#solution">AI Capabilities</a></li>
+                        <li><a href="#architecture">Architecture Diagram</a></li>
+                        <li><a href="#technologies">Technologies</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h5>RESOURCES</h5>
+                    <ul class="footer-links">
+                        <li><a href="#search-section">Live Discovery Feed</a></li>
+                        <li><a href="backend/README.md" target="_blank">Backend API Docs</a></li>
+                        <li><a href="#future">Future Roadmap</a></li>
+                        <li><a href="#process">Workflow Process</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h5>STAY UPDATED</h5>
+                    <p style="font-size:0.85rem; color:#94a3b8;">Subscribe for early alerts on high-impact scholarships & hackathons.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="student@university.edu" required>
+                        <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Copyright & Operational Status -->
+            <div class="footer-copyright-bar">
+                <div>
+                    &copy; 2026 AI Campus Opportunity Agent. Built with Apple + Notion + ChatGPT aesthetics. All rights reserved.
+                </div>
+                <div class="footer-status-pill">
+                    <span class="status-dot"></span>
+                    <span>LangChain Cluster: Online • Tavily Web Swarm: Connected • Ping: 24ms</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+         INTERACTIVE MODAL: 1-CLICK NOTION/CHATGPT AI OPPORTUNITY SUMMARIZER
+         ========================================================================== -->
+    <div class="modal-overlay" id="summary-modal-overlay">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <span style="font-size:1.6rem;" id="summary-modal-logo">🌐</span>
+                    <div>
+                        <div class="modal-title" id="summary-modal-title">Opportunity Summary</div>
+                        <div style="font-size:0.8rem; color:var(--neon-cyan);" id="summary-modal-org">Organization Name</div>
+                    </div>
+                </div>
+                <button class="modal-close-btn" id="summary-modal-close" aria-label="Close modal">✕</button>
+            </div>
+
+            <div class="modal-body" id="summary-modal-body">
+                <!-- Notion-style blocks will be rendered here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+         INTERACTIVE DRAWER: AI CAMPUS COPILOT (CHATGPT STYLE CHATBOT)
+         ========================================================================== -->
+    <div class="drawer-backdrop" id="chat-drawer-backdrop"></div>
+    <div class="drawer-container" id="chat-drawer">
+        <div class="modal-header">
+            <div class="modal-title-wrap">
+                <div class="logo-icon-wrap" style="width:36px; height:36px; font-size:1.1rem;">✨</div>
+                <div>
+                    <div class="modal-title" style="font-size:1.05rem;">Campus AI Copilot</div>
+                    <div style="font-size:0.75rem; color:#6ee7b7;">● Active Reasoning Engine</div>
+                </div>
+            </div>
+            <button class="modal-close-btn" id="chat-drawer-close">✕</button>
+        </div>
+
+        <!-- Chat messages interior -->
+        <div class="chat-messages-area" id="chat-messages">
+            <div class="chat-msg assistant">
+                👋 Greetings! I am your <strong>Campus AI Opportunity Copilot</strong>. Ask me anything like:<br><br>
+                • <em>"Find me high-stipend remote ML internships for 3rd year students"</em><br>
+                • <em>"What scholarships are closing soon?"</em><br>
+                • <em>"Show me hackathons with cash prizes"</em>
+            </div>
+        </div>
+
+        <!-- Quick prompt suggestions -->
+        <div class="quick-prompts-bar">
+            <button class="quick-prompt-pill" data-prompt="Show me internships closing in < 7 days">🔥 Urgent Internships</button>
+            <button class="quick-prompt-pill" data-prompt="Find scholarships for engineering students">🎓 Top Scholarships</button>
+            <button class="quick-prompt-pill" data-prompt="Show all upcoming hackathons">💻 Hackathons</button>
+        </div>
+
+        <!-- Chat Input Bar -->
+        <div class="chat-input-bar">
+            <input type="text" id="chat-drawer-input" class="chat-input" placeholder="Type your opportunity query..." autocomplete="off">
+            <button class="btn btn-primary btn-sm" id="chat-drawer-send">Transmit</button>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+         INTERACTIVE DRAWER: BOOKMARKED OPPORTUNITIES TRAY
+         ========================================================================== -->
+    <div class="drawer-backdrop" id="bookmarks-drawer-backdrop"></div>
+    <div class="drawer-container" id="bookmarks-drawer">
+        <div class="modal-header">
+            <div class="modal-title-wrap">
+                <span style="font-size:1.4rem; color:var(--accent-amber);">★</span>
+                <div>
+                    <div class="modal-title" style="font-size:1.05rem;">Saved Opportunities</div>
+                    <div style="font-size:0.75rem; color:var(--text-secondary);" id="bookmarks-count-label">0 Opportunities Bookmarked</div>
+                </div>
+            </div>
+            <button class="modal-close-btn" id="bookmarks-drawer-close">✕</button>
+        </div>
+
+        <div class="chat-messages-area" id="bookmarks-list-area">
+            <!-- Bookmarked items rendered here -->
+        </div>
+
+        <div style="padding:16px 20px; border-top:1px solid var(--border-glass); background:#080d24; display:flex; gap:10px;">
+            <button class="btn btn-glass btn-sm" style="flex:1;" id="btn-clear-all-bookmarks">Clear All</button>
+            <a href="#search-section" class="btn btn-primary btn-sm" style="flex:1;" id="btn-browse-more">Browse More</a>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+         INTERACTIVE MODAL: STUDENT PROFILE CALIBRATION
+         ========================================================================== -->
+    <div class="modal-overlay" id="profile-modal-overlay">
+        <div class="modal-dialog" style="max-width:520px;">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <span style="font-size:1.4rem;">⚙️</span>
+                    <div class="modal-title">Calibrate Student Profile</div>
+                </div>
+                <button class="modal-close-btn" id="profile-modal-close">✕</button>
+            </div>
+
+            <div class="modal-body">
+                <form id="profile-edit-form" style="display:flex; flex-direction:column; gap:16px;">
+                    <div>
+                        <label class="filter-label">Student Name</label>
+                        <input type="text" id="prof-input-name" class="custom-select" value="Alex Rivera" required>
+                    </div>
+
+                    <div>
+                        <label class="filter-label">Major / Branch</label>
+                        <select id="prof-input-branch" class="custom-select">
+                            <option value="Computer Science / IT">Computer Science / IT</option>
+                            <option value="Electronics & Comm (ECE)">Electronics & Comm (ECE)</option>
+                            <option value="Electrical (EE)">Electrical (EE)</option>
+                            <option value="Mechanical">Mechanical Engineering</option>
+                            <option value="Biotechnology">Biotechnology</option>
+                            <option value="MBA & Business">MBA & Business</option>
+                            <option value="Design / UX">Design / UI-UX</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="filter-label">Current Academic Year</label>
+                        <select id="prof-input-year" class="custom-select">
+                            <option value="1st Year">1st Year (Freshman)</option>
+                            <option value="2nd Year">2nd Year (Sophomore)</option>
+                            <option value="3rd Year" selected>3rd Year (Pre-final)</option>
+                            <option value="4th Year">4th Year (Final)</option>
+                            <option value="Masters / PhD">Masters / PhD</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="filter-label">Current CGPA (out of 10.0)</label>
+                        <input type="number" step="0.1" min="5.0" max="10.0" id="prof-input-cgpa" class="custom-select" value="8.7">
+                    </div>
+
+                    <div style="display:flex; justify-content:flex-end; gap:10px; margin-top:10px;">
+                        <button type="button" class="btn btn-glass" id="profile-modal-cancel">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Save & Recalculate Matches</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+         AUTHENTICATION MODALS (LOGIN, SIGN UP, FORGOT PASSWORD, PROFILE)
+         ========================================================================== -->
+
+    <!-- 1. LOGIN MODAL -->
+    <div class="modal-overlay auth-modal-overlay" id="login-modal-overlay">
+        <div class="modal-dialog auth-modal-dialog">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <span class="auth-header-icon">🔐</span>
+                    <div>
+                        <div class="modal-title">Student Login</div>
+                        <div style="font-size:0.8rem; color:var(--text-secondary);">Access your personalized campus opportunity feed</div>
+                    </div>
+                </div>
+                <button class="modal-close-btn" id="login-modal-close" aria-label="Close login modal">✕</button>
+            </div>
+
+            <div class="modal-body">
+                <form id="login-form" class="auth-form" novalidate>
+                    <div class="auth-error-alert" id="login-error-box" style="display:none;"></div>
+
+                    <div class="form-group">
+                        <label class="filter-label" for="login-email">College / University Email</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-field-icon">📧</span>
+                            <input type="email" id="login-email" class="auth-input" placeholder="student@university.edu" required autocomplete="email">
+                        </div>
+                        <div class="form-error-msg" id="login-email-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="filter-label" for="login-password">Password</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-field-icon">🔑</span>
+                            <input type="password" id="login-password" class="auth-input" placeholder="Enter your password" required autocomplete="current-password">
+                            <button type="button" class="password-toggle-btn" id="login-password-toggle" title="Show/Hide password">👁️</button>
+                        </div>
+                        <div class="form-error-msg" id="login-password-error"></div>
+                    </div>
+
+                    <div class="auth-remember-row">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="login-remember-me" checked>
+                            <span class="checkbox-custom"></span>
+                            <span>Remember Me</span>
+                        </label>
+                        <button type="button" class="auth-link-btn" id="btn-open-forgot">Forgot Password?</button>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg auth-submit-btn" id="login-submit-btn">
+                        <span>Log In to Account</span>
+                    </button>
+
+                    <div class="auth-switch-footer">
+                        <span>Don't have an account yet?</span>
+                        <button type="button" class="auth-link-highlight" id="btn-switch-to-signup">Sign Up Free</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. SIGN UP MODAL -->
+    <div class="modal-overlay auth-modal-overlay" id="signup-modal-overlay">
+        <div class="modal-dialog auth-modal-dialog" style="max-width: 560px;">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <span class="auth-header-icon">🎓</span>
+                    <div>
+                        <div class="modal-title">Create Student Account</div>
+                        <div style="font-size:0.8rem; color:var(--text-secondary);">Unlock AI-verified internships, scholarships & grants</div>
+                    </div>
+                </div>
+                <button class="modal-close-btn" id="signup-modal-close" aria-label="Close signup modal">✕</button>
+            </div>
+
+            <div class="modal-body">
+                <!-- Registration Form View -->
+                <form id="signup-form" class="auth-form" novalidate>
+                    <div class="auth-error-alert" id="signup-error-box" style="display:none;"></div>
+
+                    <div class="form-group">
+                        <label class="filter-label" for="signup-name">Full Name</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-field-icon">👤</span>
+                            <input type="text" id="signup-name" class="auth-input" placeholder="e.g. Alex Rivera" required autocomplete="name">
+                        </div>
+                        <div class="form-error-msg" id="signup-name-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="filter-label" for="signup-email">College / University Email</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-field-icon">📧</span>
+                            <input type="email" id="signup-email" class="auth-input" placeholder="name@college.edu or name@university.edu" required autocomplete="email">
+                        </div>
+                        <div class="form-error-msg" id="signup-email-error"></div>
+                    </div>
+
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label class="filter-label" for="signup-branch">Branch / Major</label>
+                            <select id="signup-branch" class="custom-select" required>
+                                <option value="Computer Science / IT">Computer Science / IT</option>
+                                <option value="Electronics & Comm (ECE)">Electronics & Comm (ECE)</option>
+                                <option value="Electrical (EE)">Electrical (EE)</option>
+                                <option value="Mechanical">Mechanical Engineering</option>
+                                <option value="Biotechnology">Biotechnology</option>
+                                <option value="MBA & Business">MBA & Business</option>
+                                <option value="Design / UX">Design / UI-UX</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="filter-label" for="signup-year">Academic Year</label>
+                            <select id="signup-year" class="custom-select" required>
+                                <option value="1st Year">1st Year (Freshman)</option>
+                                <option value="2nd Year">2nd Year (Sophomore)</option>
+                                <option value="3rd Year" selected>3rd Year (Pre-final)</option>
+                                <option value="4th Year">4th Year (Final)</option>
+                                <option value="Masters / PhD">Masters / PhD</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="filter-label" for="signup-password">Password (min 8 characters)</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-field-icon">🔑</span>
+                            <input type="password" id="signup-password" class="auth-input" placeholder="Create a strong password" required autocomplete="new-password">
+                            <button type="button" class="password-toggle-btn" id="signup-password-toggle" title="Show/Hide password">👁️</button>
+                        </div>
+                        <div class="password-strength-container">
+                            <div class="password-strength-bar" id="password-strength-bar"></div>
+                        </div>
+                        <div class="form-error-msg" id="signup-password-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="filter-label" for="signup-confirm-password">Confirm Password</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-field-icon">🔒</span>
+                            <input type="password" id="signup-confirm-password" class="auth-input" placeholder="Repeat your password" required autocomplete="new-password">
+                            <button type="button" class="password-toggle-btn" id="signup-confirm-toggle" title="Show/Hide password">👁️</button>
+                        </div>
+                        <div class="form-error-msg" id="signup-confirm-error"></div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg auth-submit-btn" id="signup-submit-btn">
+                        <span>Complete Registration</span>
+                    </button>
+
+                    <div class="auth-switch-footer">
+                        <span>Already have an account?</span>
+                        <button type="button" class="auth-link-highlight" id="btn-switch-to-login">Log In Here</button>
+                    </div>
+                </form>
+
+                <!-- Success Animation View (Shown upon registration completion) -->
+                <div class="auth-success-view" id="signup-success-view" style="display:none;">
+                    <div class="auth-success-circle">
+                        <span class="auth-success-check">✓</span>
+                    </div>
+                    <h3 class="auth-success-title">Account Created Successfully!</h3>
+                    <p class="auth-success-desc">
+                        Welcome to <strong>AI Campus Opportunity Agent</strong>. Your student profile has been calibrated and your personalized dashboard is now unlocked.
+                    </p>
+                    <div class="auth-success-loader">
+                        <span>Entering campus matrix...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. FORGOT PASSWORD MODAL -->
+    <div class="modal-overlay auth-modal-overlay" id="forgot-modal-overlay">
+        <div class="modal-dialog auth-modal-dialog" style="max-width: 480px;">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <span class="auth-header-icon">🔄</span>
+                    <div>
+                        <div class="modal-title">Reset Password</div>
+                        <div style="font-size:0.8rem; color:var(--text-secondary);">We will send recovery instructions</div>
+                    </div>
+                </div>
+                <button class="modal-close-btn" id="forgot-modal-close">✕</button>
+            </div>
+
+            <div class="modal-body">
+                <form id="forgot-form" class="auth-form">
+                    <div class="auth-success-alert" id="forgot-feedback" style="display:none;"></div>
+
+                    <div class="form-group">
+                        <label class="filter-label" for="forgot-email">Registered College Email</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-field-icon">📧</span>
+                            <input type="email" id="forgot-email" class="auth-input" placeholder="name@university.edu" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary auth-submit-btn" id="forgot-submit-btn">
+                        <span>Send Recovery Link</span>
+                    </button>
+
+                    <div class="auth-switch-footer">
+                        <button type="button" class="auth-link-btn" id="btn-forgot-back-to-login">← Back to Log In</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. PROFILE PAGE MODAL -->
+    <div class="modal-overlay auth-modal-overlay" id="profile-view-modal">
+        <div class="modal-dialog" style="max-width: 680px;">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <div class="profile-header-avatar" id="profile-modal-avatar">AR</div>
+                    <div>
+                        <div class="modal-title" id="profile-modal-name">Alex Rivera</div>
+                        <div style="font-size:0.8rem; color:var(--neon-cyan); display:flex; align-items:center; gap:6px;">
+                            <span id="profile-modal-email">alex.rivera@university.edu</span>
+                            <span class="badge" style="margin:0; padding:2px 8px; font-size:0.7rem;">Verified Student</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="modal-close-btn" id="profile-view-close">✕</button>
+            </div>
+
+            <div class="modal-body">
+                <!-- Profile Tabs -->
+                <div class="profile-tabs-bar">
+                    <button class="profile-tab-btn active" data-tab="tab-overview">Academic Profile</button>
+                    <button class="profile-tab-btn" data-tab="tab-saved">Saved Opportunities (<span id="profile-saved-count">0</span>)</button>
+                    <button class="profile-tab-btn" data-tab="tab-edit">Edit Profile</button>
+                </div>
+
+                <!-- Tab 1: Overview -->
+                <div class="profile-tab-content active" id="tab-overview">
+                    <div class="profile-meta-grid">
+                        <div class="profile-meta-card">
+                            <div class="meta-card-label">DEPARTMENT / MAJOR</div>
+                            <div class="meta-card-value" id="profile-view-branch">Computer Science / IT</div>
+                        </div>
+                        <div class="profile-meta-card">
+                            <div class="meta-card-label">ACADEMIC YEAR</div>
+                            <div class="meta-card-value" id="profile-view-year">3rd Year (Pre-final)</div>
+                        </div>
+                        <div class="profile-meta-card">
+                            <div class="meta-card-label">CURRENT CGPA</div>
+                            <div class="meta-card-value" id="profile-view-cgpa">8.7 / 10.0</div>
+                        </div>
+                        <div class="profile-meta-card">
+                            <div class="meta-card-label">ACCOUNT STATUS</div>
+                            <div class="meta-card-value" style="color:#10b981;">● Active & Verified</div>
+                        </div>
+                    </div>
+
+                    <div class="notion-block" style="margin-top:20px;">
+                        <div class="notion-heading">
+                            <span>🤖 AI Agent Personalization Status</span>
+                        </div>
+                        <p style="color:#cbd5e1; font-size:0.9rem; line-height:1.6;">
+                            Your opportunities are filtered strictly against your declared academic year and branch. AI match scores weight courses and skills automatically.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Saved Opportunities -->
+                <div class="profile-tab-content" id="tab-saved">
+                    <div id="profile-saved-list" class="profile-saved-list">
+                        <!-- Populated by script -->
+                    </div>
+                </div>
+
+                <!-- Tab 3: Edit Profile -->
+                <div class="profile-tab-content" id="tab-edit">
+                    <form id="profile-update-form" class="auth-form" style="margin-top:10px;">
+                        <div class="form-group">
+                            <label class="filter-label">Full Name</label>
+                            <input type="text" id="edit-profile-name" class="auth-input" required>
+                        </div>
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label class="filter-label">Branch</label>
+                                <select id="edit-profile-branch" class="custom-select">
+                                    <option value="Computer Science / IT">Computer Science / IT</option>
+                                    <option value="Electronics & Comm (ECE)">Electronics & Comm (ECE)</option>
+                                    <option value="Electrical (EE)">Electrical (EE)</option>
+                                    <option value="Mechanical">Mechanical Engineering</option>
+                                    <option value="Biotechnology">Biotechnology</option>
+                                    <option value="MBA & Business">MBA & Business</option>
+                                    <option value="Design / UX">Design / UI-UX</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="filter-label">Year</label>
+                                <select id="edit-profile-year" class="custom-select">
+                                    <option value="1st Year">1st Year</option>
+                                    <option value="2nd Year">2nd Year</option>
+                                    <option value="3rd Year">3rd Year</option>
+                                    <option value="4th Year">4th Year</option>
+                                    <option value="Masters / PhD">Masters / PhD</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="filter-label">CGPA</label>
+                            <input type="number" step="0.1" min="0" max="10" id="edit-profile-cgpa" class="auth-input" value="8.7">
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="margin-top:10px;">Save Profile Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating AI Copilot Trigger Button -->
+    <button class="floating-copilot-btn" id="floating-chat-trigger" title="Chat with Campus AI Agent">
+        ✨
+    </button>
+
+    <!-- Global Toast Notification Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
