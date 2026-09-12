@@ -82,6 +82,9 @@
                         </button>
                         <button class="dropdown-item" id="dropdown-item-bookmarks">
                             <span>★</span> Saved Opportunities
+                            <button class="dropdown-item" id="dropdown-item-add">
+    <span>➕</span> Add Opportunity
+</button>
                         </button>
                         <div class="dropdown-divider"></div>
                         <button class="dropdown-item text-danger" id="dropdown-item-logout">
@@ -144,6 +147,8 @@
                 </div>
             </div>
         </div>
+        
+  
     </section>
 
     <!-- ==========================================================================
@@ -876,5 +881,31 @@
     <div class="toast-container" id="toast-container"></div>
 
     <script src="script.js"></script>
+    <div class="modal-overlay" id="add-modal">
+  <div class="modal-dialog" style="max-width:500px;">
+    <div class="modal-header">
+      <div class="modal-title">➕ Add Opportunity</div>
+      <button class="modal-close-btn" id="add-close">✕</button>
+    </div>
+
+    <div class="modal-body">
+      <input id="aTitle" class="auth-input" placeholder="Opportunity Title">
+      <input id="aOrg" class="auth-input" placeholder="Organization">
+
+      <select id="aCategory" class="custom-select">
+        <option>Internship</option>
+        <option>Scholarship</option>
+        <option>Hackathon</option>
+      </select>
+
+      <input id="aLink" class="auth-input" placeholder="Application Link">
+
+      <button class="btn btn-primary" id="submitOpp" style="width:100%;">
+        Post Opportunity
+      </button>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
