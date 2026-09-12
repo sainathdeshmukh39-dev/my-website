@@ -2301,4 +2301,42 @@ document.addEventListener("DOMContentLoaded", () => {
     updateBookmarkCounters();
     renderOpportunities();
 });
+// Open Modal
+document.getElementById("dropdown-item-add").onclick = () =>
+  document.getElementById("add-modal").classList.add("open");
 
+// Close Modal
+document.getElementById("add-close").onclick = () =>
+  document.getElementById("add-modal").classList.remove("open");
+
+// Submit Opportunity
+document.getElementById("submitOpp").onclick = () => {
+
+  const newOpp = {
+    id: "opp-" + Date.now(),
+    title: aTitle.value,
+    organization: aOrg.value,
+    logo: "📢",
+    category: aCategory.value,
+    branches: ["Computer Science / IT"],
+    years: ["1st Year","2nd Year","3rd Year","4th Year"],
+    location: "Community",
+    mode: "Open",
+    stipend_or_prize: "Community",
+    deadline: "2026-12-31",
+    days_left: 30,
+    is_urgent: false,
+    tags: ["Student"],
+    description: "Posted by community",
+    eligibility: ["Check details"],
+    perks: ["Open for all"],
+    apply_url: aLink.value,
+    match_score: 80
+  };
+
+  opportunitiesDB.unshift(newOpp);
+  renderOpportunities();
+
+  document.getElementById("add-modal").classList.remove("open");
+  alert("✅ Opportunity Added");
+};
